@@ -1,0 +1,3 @@
+Is it Node, or is it JavaScript? Does anyone say "JS" and mean "node"?
+
+I have bookmarks to get me started on a Node app with Swagger for API stuff, and Winston and Morgan for logging

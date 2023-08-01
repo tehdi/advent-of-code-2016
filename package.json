@@ -1,0 +1,18 @@
+{
+  "name": "advent-of-code-2016",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tehdi/advent-of-code-2016.git"
+  },
+  "author": "tehdi",
+  "bugs": {
+    "url": "https://github.com/tehdi/advent-of-code-2016/issues"
+  },
+  "homepage": "https://github.com/tehdi/advent-of-code-2016#readme"
+}
