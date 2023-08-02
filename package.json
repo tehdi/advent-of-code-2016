@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "nodemon index"
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -14,5 +13,15 @@
   "bugs": {
     "url": "https://github.com/tehdi/advent-of-code-2016/issues"
   },
-  "homepage": "https://github.com/tehdi/advent-of-code-2016#readme"
+  "homepage": "https://github.com/tehdi/advent-of-code-2016#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
