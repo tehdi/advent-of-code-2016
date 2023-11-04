@@ -16,7 +16,9 @@
   "homepage": "https://github.com/tehdi/advent-of-code-2016#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "fs": "^0.0.1-security",
     "morgan": "^1.10.0",
+    "path": "^0.12.7",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
     "winston": "^3.10.0"

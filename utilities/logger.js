@@ -2,23 +2,29 @@ const winston = require('winston');
 
 const consoleTransport = new winston.transports.Console({ level: 'debug' });
 
-const logger = winston.createLogger({
-    transports: [ consoleTransport ],
-    exitOnError: false,
-    colorize: false,
-    format: winston.format.json() // is default, but I'm putting it here to remind me
+const winstonLogger = winston.createLogger({
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.json()
+  ),
+  transports: [consoleTransport],
+  exitOnError: false
 });
 
+const isTruthy = (str) => str.toLowerCase() === 'true' || str === '1';
+
+const logger = {
+  verbose: 'false',
+
+  debug: function (message) {
+    if (isTruthy(this.verbose)) {
+      winstonLogger.debug(message);
+    }
+  },
+
+  info: function (message) {
+    winstonLogger.info(message);
+  }
+}
 
 module.exports = logger;
-
-/*
-Log levels. Lower number = more important.
-  error: 0,
-  warn: 1,
-  info: 2,
-  http: 3,
-  verbose: 4,
-  debug: 5,
-  silly: 6
-*/

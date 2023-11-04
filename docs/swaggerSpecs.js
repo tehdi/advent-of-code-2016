@@ -10,6 +10,6 @@ module.exports = {
         ]
     },
     apis: [
-        "./routes/*.js"
+        "./days/*/route.js"
     ]
 };
