@@ -11,10 +11,14 @@ const inputFile = path.join(__dirname, 'input.txt');
 */
 
 const part1 = async (data) => {
+    data.trim().split('\n').forEach(line => {
+    })
     return 'part 1';
 }
 
 const part2 = async (data) => {
+    data.trim().split('\n').forEach(line => {
+    })
     return 'part 2';
 }
 
