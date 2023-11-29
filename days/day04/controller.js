@@ -90,7 +90,7 @@ const decryptName = (roomName, sectorId) => {
 
 module.exports.test1 = async (request, response) => {
     const data = await fsPromises.readFile(testFile, 'utf8');
-    const result = await part1(data, request.query.verbose);
+    const result = await part1(data);
     response.json({ 'day': day, 'part': 'test 1', 'expected': 1514, 'result': result });
 }
 

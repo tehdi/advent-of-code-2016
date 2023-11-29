@@ -2,4 +2,5 @@ Is it Node, or is it JavaScript? Does anyone say "JS" and mean "node"?
 
 I have bookmarks to get me started on a Node app with Swagger for API stuff, and Winston and Morgan for logging
 
-curl -X GET http://localhost:12016/day02/part1?verbose=0
+npm run dev
+curl -X GET http://localhost:12016/day06/test1?verbose=1

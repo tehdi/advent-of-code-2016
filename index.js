@@ -27,5 +27,6 @@ app.use('/day02', require('./days/day02/route'));
 app.use('/day03', require('./days/day03/route'));
 app.use('/day04', require('./days/day04/route'));
 app.use('/day05', require('./days/day05/route'));
+app.use('/day06', require('./days/day06/route'));
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
